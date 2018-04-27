@@ -1,0 +1,5 @@
+
+{
+  "inputDir" :"hdfs://hadoop1:8020/data/bos-json/",
+  "outputDir":"hdfs://hadoop1:8020/data/bos_log/"
+}

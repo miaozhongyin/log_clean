@@ -1,0 +1,8 @@
+{
+  "clean-log":"clean-log.jar",
+  "clean_script":"spark-submit.sh",
+  "log_dir":"/home/miaozy/IdeaProjects/clean-log/src/main/testData/",
+  "json_dir":"/home/miaozy/IdeaProjects/clean-log/src/main/jsonData/",
+  "input_dir" :"hdfs://hadoop1:8020/data/bos-json/",
+  "output_dir":"hdfs://hadoop1:8020/data/bos_log/"
+}
