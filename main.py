@@ -19,7 +19,7 @@ if __name__ == "__main__":
         """start convert log to json"""
         #convert_log(log_path, json_path)
         """step 2: put json file to hdfs dir """
-        #put_file(json_path, input_dir)
+        put_file(json_path, input_dir)
         """step 3: start spark job """
         #run_spark_job(input_dir, output_dir, tb_name, tb_fields, par_date)
         print(tb_name + ":" + tb_fields)
