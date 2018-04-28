@@ -41,7 +41,7 @@ def run_spark_job(input_dir, output_dir, tb_name, fields, par_date):
 def put_file(source_path, target_dir):
 
     if os.path.exists(source_path) and (not subprocess.check_output('hdfs dfs -test -e ' + target_dir, shell=True)):
-        result = subprocess.check_output('hdfs dfs -put ' + source_path + ' ' + target_dir, shell=True)
+        result = subprocess.check_call('hdfs dfs -put ' + source_path + ' ' + target_dir, shell=True)
         return result
     else:
         print("source_path :" + source_path + "or target_dir : " + target_dir + " exist ")
